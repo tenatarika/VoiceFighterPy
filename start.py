@@ -1,26 +1,9 @@
-from voice_Iissener import VoiceLissener
-from voice_speaker import  Speaker
-
+from pdf_reader import read_pdf_from_file
 
 
 def main():
     
-    lissener = VoiceLissener()
-    speaker = Speaker()
-    
-    speaker.speak("Вы хотите разрушить мир?")
-    take = lissener.takeCommands()
-    
-    choice = take
-    if "yes" in choice:
-        speaker.speak("Ваш мир будет разрушен через 10 секунд")
-        for i in range(9, 0, -1):
-            
-            speaker.speak(i)
-        
-        
-    if "no" in choice:
-        speaker.speak("thanks")
+    pass
         
     
     
