@@ -8,22 +8,18 @@ def main():
     lissener = VoiceLissener()
     speaker = Speaker()
     
-    speaker.speak("Вы хотите разрушить мир?")
+    speaker.speak("Can  you say YES?")
     take = lissener.takeCommands()
-    
     choice = take
-    if "yes" in choice:
-        speaker.speak("Ваш мир будет разрушен через 10 секунд")
+    if "да" in choice:
+        speaker.speak("Списибо большое за внимание!")
         for i in range(9, 0, -1):
-            
             speaker.speak(i)
+
+    if "нет" in choice:
+        speaker.speak("жаль")
         
         
-    if "no" in choice:
-        speaker.speak("thanks")
-        
-        
-    
     
 
 if __name__ == '__main__':

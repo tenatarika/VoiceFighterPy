@@ -18,7 +18,7 @@ class VoiceLissener:
             try:
                 print('recording')
                 
-                Query = recorder.recognize_google(audio, language="en-US")
+                Query = recorder.recognize_google(audio, language="ru")
                         
             except Exception as e:
                 print(e)
